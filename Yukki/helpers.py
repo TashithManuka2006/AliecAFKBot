@@ -109,34 +109,34 @@ RANDOM = [
 ]
 
 
-HELP_TEXT = f"""Welcome to {botname}'s Help Section.
+HELP_TEXT = f"""ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {botname}'ꜱ ʜᴇʟᴘ ꜱᴇᴄᴛɪᴏɴ.
 
-- When someone mentions you in a chat, the user will be notified you are AFK. You can even provide a reason for going AFK, which will be provided to the user as well.
-
-
-/afk - This will set you offline.
-
-/afk [Reason] - This will set you offline with a reason.
-
-/afk [Replied to a Sticker/Photo] - This will set you offline with an image or sticker.
-
-/afk [Replied to a Sticker/Photo] [Reason] - This will set you afk with an image and reason both.
+- ᴡʜᴇɴ ꜱᴏᴍᴇᴏɴᴇ ᴍᴇɴᴛɪᴏɴꜱ ʏᴏᴜ ɪɴ ᴀ ᴄʜᴀᴛ, ᴛʜᴇ ᴜꜱᴇʀ ᴡɪʟʟ ʙᴇ ɴᴏᴛɪꜰɪᴇᴅ ʏᴏᴜ ᴀʀᴇ ᴀꜰᴋ. ʏᴏᴜ ᴄᴀɴ ᴇᴠᴇɴ ᴘʀᴏᴠɪᴅᴇ ᴀ ʀᴇᴀꜱᴏɴ ꜰᴏʀ ɢᴏɪɴɢ ᴀꜰᴋ, ᴡʜɪᴄʜ ᴡɪʟʟ ʙᴇ ᴘʀᴏᴠɪᴅᴇᴅ ᴛᴏ ᴛʜᴇ ᴜꜱᴇʀ ᴀꜱ ᴡᴇʟʟ.
 
 
-/settings - To change or edit basic settings of AFK Bot.
+/afk - ᴛʜɪꜱ ᴡɪʟʟ ꜱᴇᴛ ʏᴏᴜ ᴏꜰꜰʟɪɴᴇ.
+
+/afk [ʀᴇᴀꜱᴏɴ] - ᴛʜɪꜱ ᴡɪʟʟ ꜱᴇᴛ ʏᴏᴜ ᴏꜰꜰʟɪɴᴇ ᴡɪᴛʜ ᴀ ʀᴇᴀꜱᴏɴ.
+
+/afk [ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴀ ꜱᴛɪᴄᴋᴇʀ/ᴘʜᴏᴛᴏ] - ᴛʜɪꜱ ᴡɪʟʟ ꜱᴇᴛ ʏᴏᴜ ᴏꜰꜰʟɪɴᴇ ᴡɪᴛʜ ᴀɴ ɪᴍᴀɢᴇ ᴏʀ ꜱᴛɪᴄᴋᴇʀ.
+
+/afk [ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴀ ꜱᴛɪᴄᴋᴇʀ/ᴘʜᴏᴛᴏ] [ʀᴇᴀꜱᴏɴ] - ᴛʜɪꜱ ᴡɪʟʟ ꜱᴇᴛ ʏᴏᴜ ᴀꜰᴋ ᴡɪᴛʜ ᴀɴ ɪᴍᴀɢᴇ ᴀɴᴅ ʀᴇᴀꜱᴏɴ ʙᴏᴛʜ.
+
+
+/settings - ᴛᴏ ᴄʜᴀɴɢᴇ ᴏʀ ᴇᴅɪᴛ ʙᴀꜱɪᴄ ꜱᴇᴛᴛɪɴɢꜱ ᴏꜰ ᴀꜰᴋ ʙᴏᴛ.
 """
 
 def settings_markup(status: Union[bool, str] = None):
     buttons = [
         [
-            InlineKeyboardButton(text="🔄 Clean Mode", callback_data="cleanmode_answer"),
+            InlineKeyboardButton(text="ᴄʟᴇᴀɴ ᴍᴏᴅᴇ", callback_data="cleanmode_answer"),
             InlineKeyboardButton(
-                text="✅ Enabled" if status == True else "❌ Disabled",
+                text="ᴇɴᴀʙʟᴇᴅ" if status == True else "❌ Disabled",
                 callback_data="CLEANMODE",
             ),
         ],
         [
-            InlineKeyboardButton(text="🗑 Close Menu", callback_data="close"),
+            InlineKeyboardButton(text="ᴄʟᴏꜱᴇ", callback_data="close"),
         ],
     ]
     return buttons
